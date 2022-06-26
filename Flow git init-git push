@@ -1,0 +1,134 @@
+Mila@Mila-▒▒ MINGW64 ~ (master)
+$ cd /c/Users/Mila/PycharmProjects/QAGURU_DZ_3_git
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git --version
+git version 2.34.1.windows.1
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git add test_example.py
+fatal: pathspec 'test_example.py' did not match any files
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git add test_example.py
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git add .gitignor
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignor
+        new file:   main.py
+        new file:   test_example.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git commit -m "init commit"
+[main (root-commit) 996dcae] init commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignor
+ create mode 100644 main.py
+ create mode 100644 test_example.py
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git log
+commit 996dcae4f7be9017eb0633eaafa9e2a23c1fd0b7 (HEAD -> main)
+Author: Mila60 <lvpro@mail.ru>
+Date:   Sun Jun 26 18:03:36 2022 +0500
+
+    init commit
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git config --global user.name
+Mila60
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git config --global user.email
+lvpro@mail.ru
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git remote add origin git@github.com:Mila60/QAGURU_DZ_3_git.git
+error: remote origin already exists.
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 231 bytes | 46.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Mila60/QAGURU_DZ_3_git.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$git rm --cached main.py
+rm 'main.py'
+
+Mila@Mila-▒▒ MINGW64 ~/PycharmProjects/QAGURU_DZ_3_git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    main.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        main.py
+
